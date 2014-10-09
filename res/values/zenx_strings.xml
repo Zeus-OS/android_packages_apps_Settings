@@ -43,4 +43,8 @@
     <!-- Black theme for dark mode -->
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
 </resources>
