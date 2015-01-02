@@ -126,6 +126,15 @@
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
+    <!-- ZenX version -->
+    <Preference
+        android:key="zenx_version"
+        android:order="43"
+        android:title="@string/zenx_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.zenx.ZenxVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
