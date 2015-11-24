@@ -69,4 +69,8 @@
     <string name="zenx_updater_summary">Check for the latest version of the rom</string>
     <string name="keywords_zenx_updater">ZenxOTA, updater, OTA</string>
 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+
 </resources>
