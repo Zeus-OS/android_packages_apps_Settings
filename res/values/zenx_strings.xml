@@ -47,4 +47,9 @@
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Since the last update</string>
     <string name="changelog_error">Unable to load changelog</string>
+
+    <!-- ZenHub -->
+    <string name="zenhub_settings_title">Zen Hub</string>
+    <string name="zenhub_settings_summary">Feel the power of ZenX-OS!</string>
+    
 </resources>

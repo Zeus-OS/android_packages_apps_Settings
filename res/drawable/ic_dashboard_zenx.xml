@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 ZenX-OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     
+          http://www.apache.org/licenses/LICENSE-2.0
+          
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector
+    android:height="24dp"
+    android:viewportHeight="1000"
+    android:viewportWidth="1000"
+    android:width="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="?android:attr/textColorPrimary"
+        android:pathData="M22.2266 18.2815C20.7158 19.6596 18.7061 20.5 16.5 20.5C11.8056 20.5 8 16.6944 8 12C8 10.2744 8.51418 8.66898 9.39768 7.32847C4.95465 7.06836 2.00761 11.5304 3.00001 15.5C2.5 15.5 1.00001 15 0.165924 14C1.11808 19.6754 6.05402 24 12 24C16.3245 24 20.1147 21.7125 22.2266 18.2815Z" />
+    <path
+        android:fillColor="?android:attr/textColorPrimary"
+        android:pathData="M16.5 20.5C18.7061 20.5 20.7158 19.6596 22.2266 18.2815C18 25.1481 5.12501 24 3.00001 15.5C2.0076 11.5304 4.95464 7.06836 9.39768 7.32847C8.51418 8.66898 8 10.2744 8 12C8 16.6944 11.8056 20.5 16.5 20.5Z" />
+    <path
+        android:fillColor="?android:attr/textColorPrimary"
+        android:pathData="M7.49732 3.49761C5.29126 3.49761 3.28148 4.33803 1.77069 5.71616C5.99732 -1.15045 18.8723 -0.00238752 20.9973 8.49761C21.9897 12.4672 19.0427 16.9292 14.5996 16.6691C15.4831 15.3286 15.9973 13.7232 15.9973 11.9976C15.9973 7.30319 12.1917 3.49761 7.49732 3.49761Z" /></vector>
