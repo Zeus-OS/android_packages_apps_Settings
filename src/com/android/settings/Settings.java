@@ -181,4 +181,7 @@ public class Settings extends SettingsActivity {
     // LiveDisplay
     public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 
+    // ZenHub
+    public static class ZenHubActivity extends SettingsActivity { /* empty */ }
+
 }
