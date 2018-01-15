@@ -198,4 +198,7 @@
     <string name="gaming_mode_title">Gaming Mode</string>
 
     <string name="app_picker_dialog_title">Select app</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
 </resources>
