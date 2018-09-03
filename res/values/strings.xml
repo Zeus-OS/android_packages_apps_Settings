@@ -10269,6 +10269,9 @@
     <!-- Title text for double twist for camera mode [CHAR LIMIT=60]-->
     <string name="double_twist_for_camera_mode_title">Flip camera</string>
 
+    <string name="three_finger_gesture">Three Finger Gesture </string>
+    <string name="three_finger_gesture_summary ">Take a Screenshot with three finger gesture</string>
+
     <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
     <string name="double_twist_for_camera_mode_summary"></string>
 
