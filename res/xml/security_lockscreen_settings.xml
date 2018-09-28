@@ -100,6 +100,12 @@
             <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
         </lineageos.preference.RemotePreference>
 
+        <SwitchPreference
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
