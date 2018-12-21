@@ -21,4 +21,6 @@
     <!-- Shortcuts -->
     <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
 
+    <color name="settings_icon_oneplus">@android:color/white</color>
+
 </resources>
