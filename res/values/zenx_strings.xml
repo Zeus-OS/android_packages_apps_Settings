@@ -58,4 +58,9 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
+    <!-- Zenx Updater -->
+    <string name="zenx_updater_title">ZenX Updater</string>
+    <string name="zenx_updater_summary">Check for the latest version of the rom</string>
+    <string name="keywords_zenx_updater">ZenxOTA, updater, OTA</string>
+
 </resources>
