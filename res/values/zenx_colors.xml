@@ -18,4 +18,7 @@
     <!-- Settings HomePage ZenHub -->
     <color name="homepage_zenhub_background">#78A0D0</color>
 
+    <!-- Shortcuts -->
+    <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
+
 </resources>
