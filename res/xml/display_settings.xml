@@ -161,11 +161,14 @@
         android:key="show_operator_name"
         android:title="@string/show_operator_name_title"
         android:summary="@string/show_operator_name_summary" />
-
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
-        android:key="long_screen_settings"
+    
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
         android:icon="@drawable/ic_immersive"
-        lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
+        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
 
     <Preference
         android:key="lockscreen_from_display_settings"
