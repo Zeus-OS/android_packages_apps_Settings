@@ -163,7 +163,8 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.zen.hub.ZenHub;
-import com.crdroid.settings.fragments.misc.GamingMode;
+import com.zen.hub.fragments.subs.GamingMode;
+import com.zen.hub.fragments.subs.SmartPixels;
 
 public class SettingsGateway {
 
@@ -314,9 +315,10 @@ public class SettingsGateway {
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
-            ZenHub.class.getName()
-            RunningServices.class.getName()
+            ZenHub.class.getName(),
+            RunningServices.class.getName(),
             GamingMode.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -359,5 +361,6 @@ public class SettingsGateway {
             Settings.ZenHubActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
