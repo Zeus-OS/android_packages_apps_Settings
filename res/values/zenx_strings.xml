@@ -147,4 +147,14 @@
     <!-- Lockscreen rotation -->
     <string name="lockscreen_rotation_title">Auto-rotate lockscreen</string>
 
+    <!-- About phone screen, Zenx version -->
+    <string name="zenx_version">ZenX version</string>
+    <string name="zenx_version_default">Unknown</string>
+    <string name="keywords_zenx_version">zenx version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
+
 </resources>
