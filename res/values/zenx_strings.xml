@@ -19,5 +19,7 @@
     <string name="zenx_version">ZenX version</string>
     <string name="zenx_version_default">Unknown</string>
     <string name="keywords_zenx_version">ZenX version, zenx</string>
-    
+    <string name="zenx_build_date">Build date</string>
+    <string name="zenx_build_default">Unknown</string>
+    <string name="keywords_build_date">Zenx build , build info</string>
 </resources>
