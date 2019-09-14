@@ -30,6 +30,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
 
+    <!-- ZenX build type -->
+    <Preference
+        android:key="zenx_build_type"
+        android:title="@string/zenx_build_type"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildTypePreferenceController"/>
+        
     <!-- ZenX build date -->
     <Preference
         android:key="zenx_build_date"
