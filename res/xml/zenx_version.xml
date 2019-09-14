@@ -22,6 +22,12 @@
     android:title="@string/zenx_version"
     settings:keywords="@string/keywords_zenx_version">
 
+    <!-- ZenX Logo Header -->
+    <Preference 
+        android:key="zenx_logo"
+        android:order="-500"
+        android:layout="@layout/zenx_logo" />
+
     <!-- ZenX version -->
     <Preference
         android:key="zenx_version"
