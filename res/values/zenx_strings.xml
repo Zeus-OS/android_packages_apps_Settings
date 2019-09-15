@@ -27,4 +27,8 @@
     <!-- ZenX maintainer -->
     <string name="maintainer">Maintainer</string>
     <string name="zenx_maintainer">Unofficial Maintainer</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp">Battery temperature</string>
+
 </resources>
