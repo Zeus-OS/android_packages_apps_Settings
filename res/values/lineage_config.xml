@@ -36,4 +36,7 @@
     <string name="config_batCurCap"></string>
     <string name="config_batDesCap"></string>
     <string name="config_batChargeCycle"></string>
+
+    <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
+    <bool name="configShowDeviceSensitiveInfo">false</bool>
 </resources>
