@@ -150,6 +150,7 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.zenx.zen.hub.ZenHub;
+import com.zenx.zen.hub.fragments.miscbattery.tabs.submodules.GamingMode;
 
 public class SettingsGateway {
 
@@ -288,7 +289,8 @@ public class SettingsGateway {
             GlobalActionsPanelSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
-            ZenHub.class.getName()
+            ZenHub.class.getName(),
+            GamingMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -328,5 +330,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.ZenHubActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
 }

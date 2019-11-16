@@ -184,4 +184,5 @@ public class Settings extends SettingsActivity {
     // ZenHub
     public static class ZenHubActivity extends SettingsActivity { /* empty */ }
 
+    public static class GamingModeActivity extends SettingsActivity {}
 }
