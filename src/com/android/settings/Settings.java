@@ -242,4 +242,5 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    public static class GamingModeActivity extends SettingsActivity {}
 }
