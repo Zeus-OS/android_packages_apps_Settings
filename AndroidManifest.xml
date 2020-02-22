@@ -3379,5 +3379,67 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.zenx.zen.hub.fragments.GamingMode" />
         </activity>
+
+        <!-- Navbar -->
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.BackLongPress"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.BackLongPress" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.BackDoubleTap"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.BackDoubleTap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.HomeLongPress"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.HomeLongPress" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.HomeDoubleTap"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.HomeDoubleTap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.AppSwitchLongPress"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.AppSwitchLongPress" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zenx.zen.hub.fragments.navbar.AppSwitchDoubleTap"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth"
+            android:label="@string/app_picker_dialog_title" >
+            <intent-filter>
+                <action android:name="com.zenx.zen.hub.fragments.navbar.AppSwitchDoubleTap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
