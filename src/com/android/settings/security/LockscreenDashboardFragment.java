@@ -64,7 +64,6 @@ public class LockscreenDashboardFragment extends DashboardFragment
             "security_lockscreen_add_users_when_locked";
 
 
-    private AmbientDisplayConfiguration mConfig;
     private OwnerInfoPreferenceController mOwnerInfoPreferenceController;
 
     @Override
@@ -90,12 +89,6 @@ public class LockscreenDashboardFragment extends DashboardFragment
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        use(AmbientDisplayAlwaysOnPreferenceController.class)
-                .setConfig(getConfig(context))
-                .setCallback(this::updatePreferenceStates);
-        use(AmbientDisplayNotificationsPreferenceController.class).setConfig(getConfig(context));
-        use(DoubleTapScreenPreferenceController.class).setConfig(getConfig(context));
-        use(PickupGesturePreferenceController.class).setConfig(getConfig(context));
     }
 
     @Override
@@ -121,13 +114,6 @@ public class LockscreenDashboardFragment extends DashboardFragment
         if (mOwnerInfoPreferenceController != null) {
             mOwnerInfoPreferenceController.updateSummary();
         }
-    }
-
-    private AmbientDisplayConfiguration getConfig(Context context) {
-        if (mConfig == null) {
-            mConfig = new AmbientDisplayConfiguration(context);
-        }
-        return mConfig;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

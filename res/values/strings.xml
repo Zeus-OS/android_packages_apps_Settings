@@ -11445,4 +11445,8 @@
     <!-- Subtext for showing the option of RTT setting. [CHAR LIMIT=NONE] -->
     <string name="rtt_settings_always_visible"></string>
 
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Change Volume steps</string>
+    <string name="ambient_display_custom_title">Ambient settings</string>
+
 </resources>

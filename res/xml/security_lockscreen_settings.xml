@@ -60,36 +60,17 @@
         android:title="@string/ambient_display_category_triggers"
         android:order="1000">
 
-        <com.android.settingslib.RestrictedSwitchPreference
-            android:key="ambient_display_always_on"
-            android:title="@string/doze_always_on_title"
-            android:summary="@string/doze_always_on_summary"
-            settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
-            settings:userRestriction="no_ambient_display" />
-
+        <!-- Ambient Display -->
         <Preference
-            android:key="ambient_display_tap"
-            android:title="@string/ambient_display_tap_screen_title"
-            android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
-            settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
+            android:key="ambient_display_custom"
+            android:persistent="false"
+            android:title="@string/ambient_display_custom_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.custom.ambient.display"
+                android:targetClass="com.custom.ambient.display.DozeSettings" />
+        </Preference>
 
-        <Preference
-            android:key="ambient_display_double_tap"
-            android:title="@string/ambient_display_title"
-            android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
-            settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
-
-        <Preference
-            android:key="ambient_display_pick_up"
-            android:title="@string/ambient_display_pickup_title"
-            android:fragment="com.android.settings.gestures.PickupGestureSettings"
-            settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
-
-        <com.zenx.support.preferences.SwitchPreference
-            android:key="ambient_display_notification"
-            android:title="@string/doze_title"
-            android:summary="@string/doze_summary"
-            settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
     </PreferenceCategory>
 
