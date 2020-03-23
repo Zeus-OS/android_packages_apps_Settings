@@ -91,7 +91,7 @@
             android:summary="@string/notification_log_summary"
             android:fragment="com.android.settings.notification.NotificationStation" />
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.zenx.support.preferences.SwitchPreference
             android:key="show_snooze_options"
             android:title="@string/snooze_options_title"
             settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
@@ -101,15 +101,15 @@
             android:title="@string/asst_capabilities_actions_replies_title"
             android:summary="@string/asst_capabilities_actions_replies_summary"
             settings:controller="com.android.settings.notification.AssistantCapabilityPreferenceController" />
-zenx
+            
         <!-- Notification badging -->
-        <com.havoc.support.preferences.SwitchPreference
+        <com.zenx.support.preferences.SwitchPreference
             android:key="notification_badging"
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
         <!-- zenx notification light -->
-        <com.havoc.support.preferences.SwitchPreference
+        <com.zenx.support.preferences.SwitchPreference
             android:key="notification_pulse"
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
