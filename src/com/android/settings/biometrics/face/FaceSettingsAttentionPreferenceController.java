@@ -27,6 +27,8 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.Utils;
 import com.android.settings.core.TogglePreferenceController;
 
+import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
+
 import com.zenx.support.preferences.SwitchPreference;
 
 /**
@@ -120,6 +122,9 @@ public class FaceSettingsAttentionPreferenceController extends FaceSettingsPrefe
 
     @Override
     public int getAvailabilityStatus() {
+        if (FaceUnlockUtils.hasMotoFaceUnlock()){
+            return UNSUPPORTED_ON_DEVICE;
+        }
         return AVAILABLE;
     }
 }
