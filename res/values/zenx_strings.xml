@@ -110,4 +110,7 @@
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
+        <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
 </resources>
