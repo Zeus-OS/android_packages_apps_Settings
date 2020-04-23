@@ -26,7 +26,7 @@ public class ZenxDevicePreferenceController extends BasePreferenceController {
 
     private static final String TAG = "ZenxDevice";
 
-    private static final String KEY_ZENX_DEVICE = "ro.zenx.device";
+    private static final String KEY_ZENX_DEVICE = "ro.zenx.build.status";
 
     public ZenxDevicePreferenceController(Context context, String key) {
         super(context, key);

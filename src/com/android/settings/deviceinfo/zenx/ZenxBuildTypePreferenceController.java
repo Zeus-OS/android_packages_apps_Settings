@@ -26,7 +26,7 @@ public class ZenxBuildTypePreferenceController extends BasePreferenceController 
 
     private static final String TAG = "ZenxBuildType";
 
-    private static final String KEY_ZENX_BUILD_TYPE = "ro.zenx.releasetype";
+    private static final String KEY_ZENX_BUILD_TYPE = "ro.zenx.build.status";
 
     public ZenxBuildTypePreferenceController(Context context, String key) {
         super(context, key);
