@@ -52,6 +52,12 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
+    <com.zenx.support.preferences.SystemSettingSwitchPreference
+        android:key="ultra_power_save"
+        android:defaultValue="true"
+        android:title="@string/ultra_power_save_title"
+        android:summary="@string/ultra_power_save_summary" />
+
     <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"
         android:key="smart_charging"

@@ -69,6 +69,7 @@ import com.android.settingslib.utils.StringUtil;
 import com.android.settingslib.widget.LayoutPreference;
 
 import com.zenx.support.preferences.SystemSettingMasterSwitchPreference;
+import com.zenx.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.Collections;
 import java.util.List;
@@ -95,8 +96,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
     private static final String SMART_CHARGING = "smart_charging";
     private static final String KEY_BATTERY_TEMP = "battery_temp";
+    private static final String KEY_ULTRA_POWER_SAVING = "ultra_power_save";
 
     private SystemSettingMasterSwitchPreference mSmartCharging;
+    private SystemSettingSwitchPreference mUltraPower;
 
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
@@ -264,6 +267,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         updateBatteryTipFlag(icicle);
 
         updateMasterPrefs();
+        updateUltraPowerPrefs();
     }
 
     private void updateMasterPrefs() {
@@ -273,6 +277,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mSmartCharging.setOnPreferenceChangeListener(this);
     }
 
+    private void updateUltraPowerPrefs() {
+        mUltraPower = (SystemSettingSwitchPreference) findPreference(KEY_ULTRA_POWER_SAVING);
+        mUltraPower.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.ULTRA_POWER_SAVE, 1) == 1));
+        mUltraPower.setOnPreferenceChangeListener(this);
+    }
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mSmartCharging) {
@@ -280,7 +291,12 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SMART_CHARGING, value ? 1 : 0);
             return true;
-		}
+		} else if (preference == mUltraPower) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ULTRA_POWER_SAVE, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
