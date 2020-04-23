@@ -180,7 +180,7 @@
         android:key="vol_steps"
         android:title="@string/volume_steps_title"
         android:summary="@string/volume_steps_summary"
-        android:fragment="com.zenx.zen.hub.fragments.VolumeSteps"
+        android:fragment="com.zenx.zen.hub.fragments.buttons.tabs.submodules.VolumeSteps"
         android:order="-60" />
 
     <!-- Other sounds -->

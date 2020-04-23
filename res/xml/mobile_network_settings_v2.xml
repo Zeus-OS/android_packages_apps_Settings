@@ -120,6 +120,7 @@
             android:key="carrier_settings_version_key"
             android:title="@string/carrier_settings_version"
             settings:controller="com.android.settings.network.telephony.CarrierSettingsVersionPreferenceController"
+            android:visibility="gone"
             settings:enableCopying="true"/>
 
         <PreferenceCategory
