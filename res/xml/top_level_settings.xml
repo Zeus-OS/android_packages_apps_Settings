@@ -42,7 +42,7 @@
         android:key="top_level_zenhub_settings"
         android:title="@string/zenhub_settings_title"
         android:summary="@string/zenhub_settings_summary"
-        android:icon="@drawable/ic_dashboard_zenhub"
+        android:icon="@drawable/ic_homepage_zenhub"
         android:order="-105"
         android:fragment="com.zen.hub.ZenHub"/>
 
