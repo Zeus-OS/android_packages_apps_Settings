@@ -36,6 +36,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
 
+    <!-- ZenX maintainer -->
+    <Preference
+        android:key="maintainer"
+        android:title="@string/maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.zenx.ZenxMaintainerPreferenceController"/>
+
     <!-- ZenX Device -->
     <Preference
         android:key="zenx_device"
