@@ -20,6 +20,7 @@
     android:layout_height="132dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
+    android:background="?android:attr/colorAccent"
     android:paddingTop="8dp"
     android:orientation="vertical">
 
