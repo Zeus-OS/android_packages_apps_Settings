@@ -46,23 +46,6 @@
         settings:widgetLayout="@null"
         settings:searchable="false" />
 
-    <com.android.settings.display.darkmode.DarkModePreference
-        android:key="dark_ui_mode"
-        android:title="@string/dark_ui_mode"
-        android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-        android:widgetLayout="@null"
-        settings:widgetLayout="@null"
-        settings:controller="com.android.settings.display.DarkUIPreferenceController"
-        settings:searchable="false"/>
-
-    <com.android.settingslib.RestrictedPreference
-        android:key="wallpaper"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/style_suggestion_summary"
-        settings:keywords="@string/keywords_display_wallpaper"
-        settings:controller="com.android.settings.display.WallpaperPreferenceController">
-    </com.android.settingslib.RestrictedPreference>
-
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.display.TimeoutListPreference
         android:key="screen_timeout"
@@ -155,34 +138,15 @@
         android:key="display_cutout_emulation"
         android:title="@string/display_cutout_emulation"
         settings:keywords="@string/display_cutout_emulation_keywords" />
-
+<!-- 
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
-        android:summary="@string/summary_placeholder" />
+        android:summary="@string/summary_placeholder" /> -->
 
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
-     <PreferenceCategory
-        android:key="dashboard_category"
-        android:title="@string/dashboard_category">
-
-        <com.zenx.support.preferences.SystemSettingSwitchPreference
-            android:key="enable_conditions" 
-            android:title="@string/dashboard_conditions_title" 
-            android:summaryOn="@string/summary_dashboard_conditions_enabled" 
-            android:summaryOff="@string/summary_dashboard_conditions_disabled" 
-            android:defaultValue="true" /> 
-        
-        <com.zenx.support.preferences.SystemSettingSwitchPreference
-            android:key="enable_suggestions" 
-            android:title="@string/dashboard_suggestions_title" 
-            android:summaryOn="@string/summary_dashboard_suggestions_enabled" 
-            android:summaryOff="@string/summary_dashboard_suggestions_disabled"
-            android:defaultValue="true" /> 
-
-    </PreferenceCategory>
 </PreferenceScreen>

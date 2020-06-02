@@ -284,15 +284,6 @@
     <string name="custom_light_on_time_title">Light pulse duration</string>
     <string name="custom_light_off_time_title">Light pulse interval</string>
 
-    <!-- Dashboard conditions-->
-    <string name="dashboard_category">Settings</string>
-    <string name="dashboard_conditions_title">Dashboard conditions</string>
-    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
-    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
-    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
-    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
-    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
-
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
