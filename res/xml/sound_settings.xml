@@ -138,6 +138,15 @@
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.notification.zen.ZenModePreferenceController"/>
 
+    <!-- Ringtone vibration pattern -->
+    <ListPreference
+        android:key="vibration_pattern"
+        android:title="@string/vibration_pattern_title"
+        android:order="-125"
+        android:entries="@array/vibration_pattern_entries"
+        android:entryValues="@array/vibration_pattern_values"
+        android:dependency="vibrate_for_calls"/>
+
     <Preference
         android:key="media_controls_summary"
         android:title="@string/media_controls_title"
