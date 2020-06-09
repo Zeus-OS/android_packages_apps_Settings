@@ -301,4 +301,7 @@
     <string name="ultra_power_save_title">Ultra Power Saving</string>
     <string name="ultra_power_save_summary">When screen goes off device will switch to ultra power mode</string>
 
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
+
 </resources>
