@@ -18,6 +18,7 @@
 
     <!-- ZenX OS -->
     <string name="zenx_title" translatable="false">ZenX-OS</string>
+    <string name="zenx_slogan" translatable="false">Developed for excellence</string>
 
     <!-- ZenHub -->
     <string name="zen_hub_title">Zen Hub</string>

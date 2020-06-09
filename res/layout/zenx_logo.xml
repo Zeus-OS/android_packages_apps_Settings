@@ -18,29 +18,36 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="132dp"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp"
-    android:background="?android:attr/colorAccent"
+    android:layout_marginLeft="16dip"
+    android:layout_marginRight="16dip"
+    android:background="@drawable/logo_banner_shape"
     android:paddingTop="8dp"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        android:minWidth="48dp"
-        android:src="@drawable/ic_zenx_logo"
-        android:adjustViewBounds="true"
-        android:scaleType="centerInside" />
-
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dip"
+        android:layout_gravity="center"
         android:singleLine="true"
+        android:paddingLeft="58dp"
         android:text="@string/zenx_title"
         android:textColor="?android:attr/textColorPrimary"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_gravity="bottom|right"
+        android:singleLine="true"
+        android:paddingLeft="58dp"
+        android:text="@string/zenx_slogan"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="14sp"
         android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
         android:ellipsize="marquee"
         android:fadingEdge="horizontal" />
