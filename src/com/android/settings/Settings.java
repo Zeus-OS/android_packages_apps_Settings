@@ -182,7 +182,7 @@ public class Settings extends SettingsActivity {
     public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 
     // ZenHub
-    public static class ZenHubActivity extends SettingsActivity { /* empty */ }
+    public static class ZenActivity extends SettingsActivity { /* empty */ }
 
     public static class GamingModeActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }

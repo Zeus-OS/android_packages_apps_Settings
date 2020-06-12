@@ -3347,12 +3347,12 @@
         </activity>
 
         <!-- Zen Hub -->
-        <activity android:name="Settings$ZenHubActivity"
+        <activity android:name="Settings$ZenActivity"
             android:label="@string/zen_hub_title"
             android:icon="@drawable/ic_homepage_zen_hub"
             android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
-                <action android:name="com.zenx.zen.hub.ZenHub" />
+                <action android:name="com.zenx.zen.hub.Zen" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -3368,7 +3368,7 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.order" android:value="-105"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zenx.zen.hub.ZenHub" />
+                android:value="com.zenx.zen.hub.Zen" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
             <meta-data android:name="com.android.settings.summary"

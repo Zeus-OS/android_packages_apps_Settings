@@ -150,7 +150,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.zenx.zen.hub.ZenHub;
+import com.zenx.zen.hub.Zen;
 import com.zenx.zen.hub.fragments.miscbattery.tabs.submodules.GamingMode;
 
 public class SettingsGateway {
@@ -290,7 +290,7 @@ public class SettingsGateway {
             GlobalActionsPanelSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
-            ZenHub.class.getName(),
+            Zen.class.getName(),
             GamingMode.class.getName(),
             RunningServices.class.getName(),
     };
@@ -331,7 +331,7 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
-            Settings.ZenHubActivity.class.getName(),
+            Settings.ZenActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
     };
