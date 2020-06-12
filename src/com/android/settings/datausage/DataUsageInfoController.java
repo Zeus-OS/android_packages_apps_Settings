@@ -43,7 +43,13 @@ public class DataUsageInfoController {
      * Otherwise use warning level.
      */
     public long getSummaryLimit(DataUsageInfo info) {
-        long limit = info.limitLevel;
+        long limit;
+
+        if(info != null) {
+           limit = info.limitLevel;
+        } else {
+           limit = 0;
+        }
         if (limit <= 0) {
             limit = info.warningLevel;
         }
