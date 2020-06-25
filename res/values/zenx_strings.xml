@@ -326,5 +326,7 @@
     <string name="volume_key_category_title">Volume Shortcut</string>
     <string name="connected_devices_category_title">Connected Devices</string>
 
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
 
 </resources>

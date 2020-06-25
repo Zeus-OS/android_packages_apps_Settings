@@ -30,6 +30,7 @@ import com.android.settings.display.RefreshRatePreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
 import com.android.settings.display.ShowOperatorNamePreferenceController;
 import com.android.settings.display.TapToWakePreferenceController;
+import com.android.settings.display.TimeoutLockscreenPreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.display.VrDisplayPreferenceController;
 import com.android.settings.display.EmulateDisplayCutoutPreferenceController;
@@ -46,6 +47,7 @@ import java.util.List;
 public class DisplaySettings extends DashboardFragment {
     private static final String TAG = "DisplaySettings";
 
+    private static final String KEY_LOCKSCREEN_TIMEOUT = "lockscreen_timeout";
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
 
     @Override
@@ -86,6 +88,7 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new ScreenSaverPreferenceController(context));
         controllers.add(new TapToWakePreferenceController(context));
+        controllers.add(new TimeoutLockscreenPreferenceController(context, KEY_LOCKSCREEN_TIMEOUT));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
