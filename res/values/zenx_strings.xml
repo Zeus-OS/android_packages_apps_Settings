@@ -26,4 +26,5 @@
 
     <!-- ZenX maintainer -->
     <string name="maintainer">Maintainer</string>
+    <string name="zenx_maintainer">Unofficial Maintainer</string>
 </resources>
