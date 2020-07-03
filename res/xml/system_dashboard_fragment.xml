@@ -21,6 +21,12 @@
     android:title="@string/header_category_system"
     settings:initialExpandedChildrenCount="4">
 
+    <!-- zenx Logo Header -->
+    <Preference 
+        android:key="zenx_logo"
+        android:order="-500"
+        android:layout="@layout/system_animation" />
+
     <Preference
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"
