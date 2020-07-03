@@ -313,4 +313,15 @@
     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
 
+    <!-- categories -->
+    <string name="display_screen_category">Screen</string>
+    <string name="display_customisation_title">Display Customisation</string>
+    <string name="wake_options_category_title">Wake Options</string>
+    <string name="volume_adjustment_category_title">Volume Adjustments</string>
+    <string name="sound_effects_category_title">Effects</string>
+    <string name="do_not_disturb_category_title">Do Not Disturb</string>
+    <string name="ringtone_category_title">Ringtone</string>
+    <string name="vibrations_category_title">Vibrations</string>
+    
+
 </resources>
