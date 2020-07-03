@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014-2019 BlissRoms Project
+<!-- Copyright (C) 2020 ZenX-OS Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-     
           http://www.apache.org/licenses/LICENSE-2.0
-          
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -13,7 +11,8 @@
      limitations under the License.
 -->
 <resources>
-    <declare-styleable name="Themes">
-        <attr name="waveViewStyle" format="reference"/>
-    </declare-styleable>
+        <!-- PreferenceCategory -->
+    <dimen name="zenx_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="zenx_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="zenx_preference_category_height">40.0dip</dimen>
 </resources>
