@@ -188,4 +188,14 @@
     <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
 
     <string name="weather_title">Weather</string>
+    <!-- Categories -->
+    <string name="display_screen_category">Screen</string>
+    <string name="display_customisation_title">Display Customisation</string>
+    <string name="wake_options_category_title">Wake Options</string>
+    <string name="volume_adjustment_category_title">Volume Adjustments</string>
+    <string name="do_not_disturb_category_title">Do Not Disturb</string>
+    <string name="sound_effects_category_title">Effects</string>
+    <string name="ringtone_category_title">Ringtone</string>
+    <string name="vibrations_category_title">Vibrations</string>
+
 </resources>
