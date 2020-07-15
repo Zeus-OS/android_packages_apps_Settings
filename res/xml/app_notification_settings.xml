@@ -64,9 +64,9 @@
     <com.zenx.support.colorpicker.ColorPickerPreference
         android:key="custom_light"
         android:dependency="lights"
-        ledPreview="true"
+        isledPicker="true"
         android:title="@string/custom_light_title"
-        settings:defaultColorValue="0xFFFFFF"/>
+        android:defaultValue="0xFFFFFF"/>
 
     <com.zenx.support.preferences.CustomSeekBarPreference
         android:key="custom_light_on_time"
