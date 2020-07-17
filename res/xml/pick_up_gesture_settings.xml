@@ -27,7 +27,7 @@
         app:preview="@drawable/gesture_ambient_lift" />
 
     <com.zenx.support.preferences.SwitchPreference
-        android:key="gesture_pick_up"
+        android:key="pick_up"
         android:title="@string/ambient_display_pickup_title"
         android:summary="@string/ambient_display_pickup_summary"
         app:keywords="@string/keywords_gesture"

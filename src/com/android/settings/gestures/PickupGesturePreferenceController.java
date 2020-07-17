@@ -26,6 +26,8 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import com.zenx.support.preferences.SwitchPreference;
+
 public class PickupGesturePreferenceController extends GesturePreferenceController {
 
     private static final int ON = 1;
@@ -33,8 +35,6 @@ public class PickupGesturePreferenceController extends GesturePreferenceControll
 
     private static final String PREF_KEY_VIDEO = "gesture_pick_up_video";
     private final String mPickUpPrefKey;
-
-    private final String SECURE_KEY = DOZE_PICK_UP_GESTURE;
 
     private AmbientDisplayConfiguration mAmbientConfig;
     @UserIdInt
@@ -89,7 +89,7 @@ public class PickupGesturePreferenceController extends GesturePreferenceControll
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        return Settings.Secure.putInt(mContext.getContentResolver(), SECURE_KEY,
+        return Settings.System.putInt(mContext.getContentResolver(), Settings.System.CUSTOM_AMBIENT_TILT_GESTURE,
                 isChecked ? ON : OFF);
     }
 
