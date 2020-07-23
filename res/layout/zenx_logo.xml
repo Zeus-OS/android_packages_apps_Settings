@@ -21,7 +21,6 @@
     android:layout_marginLeft="16dip"
     android:layout_marginRight="16dip"
     android:background="@drawable/logo_banner_shape"
-    android:paddingTop="8dp"
     android:orientation="vertical">
 
     <TextView
