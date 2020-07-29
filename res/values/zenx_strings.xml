@@ -22,7 +22,7 @@
 
     <!-- ZenHub -->
     <string name="zen_hub_title">Zen Hub</string>
-    <string name="zen_hub_dashboard_summary">OS Revolution starts here..</string>
+    <string name="zen_hub_dashboard_summary">Discover the excellence here! </string>
 
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
