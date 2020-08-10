@@ -21,4 +21,20 @@
   <item name="android:background">?android:attr/colorPrimaryDark</item>
 </style>
 
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CardView">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+     <style name="SearchBarStyle">
+       <item name="android:background">#00000000</item>
+        <item name="android:elevation">@null</item>
+    </style>
+
 </resources>
