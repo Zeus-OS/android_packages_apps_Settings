@@ -428,11 +428,8 @@
     </style>
 
     <style name="SearchBarStyle">
-        <item name="android:layout_margin">@dimen/search_bar_margin</item>
-        <item name="cardCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="enforceMaterialTheme">true</item>
-        <item name="cardElevation">3dp</item>
-        <item name="shapeAppearance">@null</item>
+       <item name="android:background">#00000000</item>
+        <item name="android:elevation">@null</item>
     </style>
 
     <style name="ConditionCardBorderlessButton"
@@ -488,14 +485,14 @@
 
     <style name="SliceViewStyle">
         <!-- 2dp start padding for the start icon -->
-        <item name="android:paddingStart">2dp</item>
+        <item name="android:paddingStart">2.0dip</item>
 
         <!-- End margin of content without end items is 24dp.
              android:paddingEnd = 24 - 16(contentEndPadding) -->
-        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingEnd">8.0dip</item>
 
-        <item name="rowStyle">@style/SliceRowStyle</item>
-        <item name="android:background">?android:attr/colorBackgroundFloating</item>
+        <item name="rowStyle">@null</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
     <style name="ContextualCardSliceViewStyle" parent="SliceViewStyle">
@@ -657,5 +654,16 @@
            parent="@style/AccessibilityDialogButton"></style>
     <style name="AccessibilityDialogButtonDeny"
            parent="@style/AccessibilityDialogButton"></style>
+
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CardView">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+    </style>
 
 </resources>

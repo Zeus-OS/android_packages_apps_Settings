@@ -97,10 +97,10 @@
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
     <!-- Dashboard image tile size -->
-    <dimen name="dashboard_tile_image_size">36dp</dimen>
+    <dimen name="dashboard_tile_image_size">38.0dip</dimen>
 
     <!-- Dashboard foreground image size -->
-    <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_size">26.0dip</dimen>
 
     <!-- Dashboard foreground image inset (from background edge to foreground edge) -->
     <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
@@ -434,5 +434,29 @@
     <dimen name="zenx_preference_category_padding_top">0.0dip</dimen>
     <dimen name="zenx_preference_category_line_margin_start">10.0dip</dimen>
     <dimen name="zenx_preference_category_height">40.0dip</dimen>
+
+     <!--Actionbar View -->
+    <dimen name="actionbar_view">60.0dip</dimen>
+    <dimen name="actionbar_view_content">@dimen/actionbar_view</dimen>
+    <dimen name="homepage_container_margin">15.0dip</dimen>
+    <dimen name="actionbar_view_margin">15dp</dimen>
+    <dimen name="actionbar_view_elevation">0dp</dimen>
+    <!--Dashboard View -->
+    <dimen name="dashboard_title_view">30.0sp</dimen>
+    <dimen name="dashboard_title_margin">20.0dp</dimen>
+    <!--SearchBar View -->
+    <dimen name="search_bar_size">50.0dp</dimen>
+    <dimen name="search_bar_margin_top">-4.0dp</dimen>
+    <dimen name="search_bar_margin_right">5.0dp</dimen>
+    <dimen name="contentInsetStartWithNav">64.0dip</dimen>
+    <!--Avatar View -->
+    <dimen name="avatar_view_size">36.0dip</dimen>
+    <dimen name="avatar_view_margin">-3.0dip</dimen>
+
+    <dimen name="abc_action_bar_elevation_material">0.0dip</dimen>
+    <dimen name="design_appbar_elevation">0dip</dimen>
+    <dimen name="cardview_default_elevation">0.0dip</dimen>
+
+    <dimen name="preference_divider">8dp</dimen>
 
 </resources>
