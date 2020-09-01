@@ -343,8 +343,8 @@
     <dimen name="contextual_card_icon_size">24dp</dimen>
     <dimen name="contextual_card_vertical_margin">8dp</dimen>
     <dimen name="contextual_card_side_margin">4dp</dimen>
-    <dimen name="contextual_card_icon_padding_start">14dp</dimen>
-    <dimen name="contextual_card_text_padding_start">16dp</dimen>
+    <dimen name="contextual_card_icon_padding_start">25.0dip</dimen>
+    <dimen name="contextual_card_text_padding_start">28.0dip</dimen>
     <dimen name="contextual_card_padding_end">16dp</dimen>
     <dimen name="contextual_card_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="contextual_full_card_padding_end">12dp</dimen>
@@ -387,7 +387,7 @@
     <dimen name="contextual_condition_full_card_padding_bottom">12dp</dimen>
     <dimen name="contextual_condition_header_padding_top">10dp</dimen>
     <dimen name="contextual_condition_header_padding_bottom">10dp</dimen>
-    <dimen name="contextual_condition_header_icons_margin_start">14dp</dimen>
+    <dimen name="contextual_condition_header_icons_margin_start">25.0dip</dimen>
     <dimen name="contextual_condition_header_indicator_padding_top">4dp</dimen>
     <dimen name="contextual_condition_header_indicator_padding_start">16dp</dimen>
     <dimen name="contextual_condition_header_indicator_padding_end">16dp</dimen>
