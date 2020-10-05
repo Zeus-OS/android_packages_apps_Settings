@@ -170,9 +170,9 @@
     <string name="adaptive_playback_summary">Pause media when volume is muted and resume it by increasing volume within the timeout</string>
     <string name="adaptive_playback_timeout_title">Playback timeout</string>
 
-        <!-- Navbar length -->
+    <!-- Navbar length -->
     <string name="navbar_length">Gesture bar length</string>
-    <string name="short_label">Short</string>
+    <string name="hidden_label">Hidden</string>
     <string name="long_label">Long</string>
 
 </resources>
