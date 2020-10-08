@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- ZenX OS -->
+    <string name="zenx_title" translatable="false">ZenX-OS</string>
+    <string name="zenx_slogan" translatable="false">Developed for excellence</string>
+    
     <!-- ZenX-OS Version -->
     <string name="zenx_version">ZenX version</string>
     <string name="zenx_version_default">Unknown</string>
