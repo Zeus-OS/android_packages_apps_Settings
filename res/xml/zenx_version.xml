@@ -67,6 +67,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildTypePreferenceController"/>
         
+    <!-- ZenX build variant -->
+    <Preference
+        android:key="zenx_build_variant"
+        android:title="@string/zenx_variant"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildVariantPreferenceController"/>
+
     <!-- ZenX build date -->
     <Preference
         android:key="zenx_build_date"

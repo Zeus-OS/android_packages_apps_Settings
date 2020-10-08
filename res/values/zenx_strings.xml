@@ -27,6 +27,8 @@
     <string name="zenx_build_default">Unknown</string>
     <string name="zenx_build_type">Build status</string>
     <string name="zenx_device">ZenX device</string>
+    <string name="zenx_variant">ZenX variant</string>
+    <string name="zenx_build_variant_default">Unknown</string>
 
     <!-- ZenX maintainer -->
     <string name="maintainer">Maintainer</string>
