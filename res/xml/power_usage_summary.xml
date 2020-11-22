@@ -67,6 +67,7 @@
         android:key="smart_charging"
         android:defaultValue="false"
         android:title="@string/smart_charging_title"
+        android:icon="@drawable/ic_smart_charging"
         android:summary="@string/smart_charging_summary" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
@@ -83,6 +84,7 @@
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="battery_temp"
         android:title="@string/battery_temp_title"
+        android:icon="@drawable/ic_battery_temperature"
         android:selectable="false" />
 
     <PreferenceCategory
@@ -92,16 +94,19 @@
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
         android:title="@string/designed_battery_capacity"
+        android:icon="@drawable/ic_battery_capacity"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="current_battery_capacity"
         android:title="@string/current_battery_capacity"
+        android:icon="@drawable/ic_current_battery_capacity"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="battery_charge_cycles"
         android:title="@string/battery_charge_cycles"
+        android:icon="@drawable/ic_charge_cycles_completed"
         android:selectable="false" />
     </PreferenceCategory>
 
