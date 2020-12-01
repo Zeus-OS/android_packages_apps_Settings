@@ -234,7 +234,7 @@
     <!-- <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category"
-        android:order="1200">  Incremented by 100 from last order (i.e. 1100) 
+        android:order="1200">  Incremented by 100 from last order (i.e. 1100)
 
     <com.android.settings.display.darkmode.DarkModePreference
         android:key="dark_ui_mode"
