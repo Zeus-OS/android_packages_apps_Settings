@@ -163,6 +163,7 @@
 
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="long_screen_settings"
+        android:icon="@drawable/ic_immersive"
         lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
 
     <Preference
