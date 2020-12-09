@@ -20,14 +20,14 @@
     <string name="zenx_slogan" translatable="false">Developed for excellence</string>
     
     <!-- ZenX-OS Version -->
-    <string name="zenx_version">ZenX version</string>
+    <string name="zenx_version">ZenX Version</string>
     <string name="zenx_version_default">Unknown</string>
-    <string name="keywords_zenx_version">ZenX version, zenx</string>
-    <string name="zenx_build_date">Build date</string>
+    <string name="keywords_zenx_version">ZenX Version, zenx</string>
+    <string name="zenx_build_date">Build Date</string>
     <string name="zenx_build_default">Unknown</string>
-    <string name="zenx_build_type">Build status</string>
-    <string name="zenx_device">ZenX device</string>
-    <string name="zenx_variant">ZenX variant</string>
+    <string name="zenx_build_type">Build Status</string>
+    <string name="zenx_device">ZenX Device</string>
+    <string name="zenx_variant">ZenX Variant</string>
     <string name="zenx_build_variant_default">Unknown</string>
 
     <!-- ZenX maintainer -->
