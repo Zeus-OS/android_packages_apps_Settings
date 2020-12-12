@@ -165,6 +165,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.zen.hub.ZenHub;
 import com.zen.hub.fragments.subs.GamingMode;
 import com.zen.hub.fragments.subs.SmartPixels;
+import com.zen.hub.fragments.subs.OmniJawsSettings;
 
 public class SettingsGateway {
 
@@ -319,6 +320,7 @@ public class SettingsGateway {
             RunningServices.class.getName(),
             GamingMode.class.getName(),
             SmartPixels.class.getName(),
+            OmniJawsSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -362,5 +364,6 @@ public class SettingsGateway {
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.OmniJawsSettingsActivity.class.getName()
     };
 }
