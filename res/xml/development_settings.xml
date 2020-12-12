@@ -321,7 +321,6 @@
         <Preference
             android:key="default_usb_configuration"
             android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
-            android:icon="@drawable/ic_usb"
             android:title="@string/usb_default_label"/>
 
         <SwitchPreference
@@ -470,10 +469,6 @@
             android:title="@string/overlay_display_devices_title"
             android:entries="@array/overlay_display_devices_entries"
             android:entryValues="@array/overlay_display_devices_values" />
-
-        <com.android.settings.display.DensityPreference
-            android:key="density"
-            android:title="@string/developer_smallest_width" />
 
         <ListPreference
             android:key="display_cutout_emulation"

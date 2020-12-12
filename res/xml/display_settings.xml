@@ -87,16 +87,10 @@
         android:fragment="com.android.settings.display.AdaptiveSleepSettings"
         settings:controller="com.android.settings.display.AdaptiveSleepPreferenceController" />
 
-    <Preference
-        android:key="display_rotation"
-        android:title="@string/display_rotation_title"
-        android:icon="@drawable/ic_auto_rotate_screen"
-        android:summary="@string/display_rotation_summary"
-        android:fragment="com.android.settings.preference.DisplayRotation"/>
-
     <org.lineageos.internal.lineageparts.LineagePartsPreference
         android:key="rotation"
         lineage:replacesKey="auto_rotate"
+        android:icon="@drawable/ic_auto_rotate_screen"
         lineage:requiresFeature="android.hardware.sensor.accelerometer" />
 
     <Preference
@@ -156,6 +150,17 @@
         android:title="@string/screen_zoom_title"
         android:fragment="com.android.settings.display.ScreenZoomSettings"/>
 
+    <com.android.settings.display.DensityPreference
+        android:key="density"
+        android:icon="@drawable/ic_screen_width"
+        android:title="@string/developer_smallest_width" />
+
+    <ListPreference
+            android:key="display_cutout_emulation"
+            android:title="@string/display_cutout_emulation"
+            android:icon="@drawable/ic_screen_cut"
+            settings:keywords="@string/display_cutout_emulation_keywords" />
+
     <SwitchPreference
         android:key="show_operator_name"
         android:title="@string/show_operator_name_title"
@@ -199,12 +204,6 @@
         android:summary="@string/proximity_wake_summary"
         android:defaultValue="@*lineageos.platform:bool/config_proximityCheckOnWakeEnabledByDefault"
         lineage:requiresConfig="@*lineageos.platform:bool/config_proximityCheckOnWake" />
-
-    <lineageos.preference.LineageGlobalSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wake_when_plugged_or_unplugged_title"
-        android:summary="@string/wake_when_plugged_or_unplugged_summary"
-      android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
 
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="high_touch_sensitivity_enable"
