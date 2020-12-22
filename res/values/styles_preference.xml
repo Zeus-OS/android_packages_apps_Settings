@@ -28,9 +28,6 @@
         <item name="preferenceCategoryStyle">@style/Preference.Zenx.Category</item>
         <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle
         </item>
-        <item name="preferenceCategoryStyle">@style/SettingsCategoryPreference</item>
-        <!-- For preference category color -->
-        <item name="preferenceCategoryTitleTextColor">?android:attr/textColorSecondary</item>
     </style>
 
     <style name="SettingsCategoryPreference" parent="Preference.Category.Material" />
