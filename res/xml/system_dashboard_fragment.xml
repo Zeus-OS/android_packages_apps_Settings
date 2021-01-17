@@ -64,7 +64,7 @@
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
     </Preference>
 
-    <!-- ZenX Updater -->
+    <!-- ZenX Updater
     <Preference
         android:key="zenx_updater"
         android:title="@string/zenx_updater_title"
@@ -74,7 +74,7 @@
         settings:keywords="@string/keywords_zenx_updater"
         settings:controller="com.android.settings.system.ZenxUpdatePreferenceController">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
-    </Preference>
+    </Preference> -->
 
     <Preference
         android:key="additional_system_update_settings"
