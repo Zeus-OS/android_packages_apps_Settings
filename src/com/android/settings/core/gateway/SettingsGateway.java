@@ -166,6 +166,7 @@ import com.zen.hub.ZenHub;
 import com.zen.hub.fragments.subs.GamingMode;
 import com.zen.hub.fragments.subs.SmartPixels;
 import com.zen.hub.fragments.subs.OmniJawsSettings;
+import com.zen.hub.fragments.ThemingSettings;
 
 public class SettingsGateway {
 
@@ -320,7 +321,8 @@ public class SettingsGateway {
             RunningServices.class.getName(),
             GamingMode.class.getName(),
             SmartPixels.class.getName(),
-            OmniJawsSettings.class.getName()
+            OmniJawsSettings.class.getName(),
+            ThemingSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -364,6 +366,7 @@ public class SettingsGateway {
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
-            Settings.OmniJawsSettingsActivity.class.getName()
+            Settings.OmniJawsSettingsActivity.class.getName(),
+            Settings.ZenxThemeActivity.class.getName()
     };
 }
