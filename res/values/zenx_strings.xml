@@ -201,4 +201,6 @@
     <string name="connected_devices_category_title">Connected Devices</string>
     <string name="theme_customization_category">Theming</string>
 
+    <string name="ls_clock_plugin_Style">Plugin options</string>
+
 </resources>

@@ -167,6 +167,7 @@ import com.zen.hub.fragments.subs.GamingMode;
 import com.zen.hub.fragments.subs.SmartPixels;
 import com.zen.hub.fragments.subs.OmniJawsSettings;
 import com.zen.hub.fragments.ThemingSettings;
+import com.zen.hub.fragments.subs.LsClock;
 
 public class SettingsGateway {
 
@@ -322,7 +323,8 @@ public class SettingsGateway {
             GamingMode.class.getName(),
             SmartPixels.class.getName(),
             OmniJawsSettings.class.getName(),
-            ThemingSettings.class.getName()
+            ThemingSettings.class.getName(),
+            LsClock.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -367,6 +369,7 @@ public class SettingsGateway {
             Settings.GamingModeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
-            Settings.ZenxThemeActivity.class.getName()
+            Settings.ZenxThemeActivity.class.getName(),
+            Settings.ZenxLsClockPluginActivity.class.getName()
     };
 }

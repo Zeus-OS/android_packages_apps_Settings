@@ -3499,11 +3499,21 @@
                   android:label="@string/theme_customization_category"
                   android:taskAffinity="com.android.settings" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" /> 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.zen.hub.fragments.ThemingSettings" />
+        </activity>
+         <activity android:name="Settings$ZenxLsClockPluginActivity"
+                  android:label="@string/ls_clock_plugin_Style"
+                  android:taskAffinity="com.android.settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.zen.hub.fragments.subs.LsClock" />
         </activity>
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
