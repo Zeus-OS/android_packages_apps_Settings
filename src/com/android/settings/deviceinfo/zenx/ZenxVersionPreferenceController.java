@@ -26,7 +26,7 @@ public class ZenxVersionPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "ZenxVersion";
 
-    private static final String KEY_ZENX_VERSION = "ro.zenx.version";
+    private static final String KEY_ZENX_VERSION = "ro.modversion";
 
     public ZenxVersionPreferenceController(Context context, String key) {
         super(context, key);
