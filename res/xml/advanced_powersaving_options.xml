@@ -17,6 +17,8 @@
     android:key="advanced_battery_saving_options"
     android:title="@string/advanced_battery_saving_title" >
 
+
+
     <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
             android:key="sensor_block"
             android:fragment="com.zen.hub.fragments.subs.SensorBlockSettings"
@@ -24,5 +26,9 @@ android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:defaultValue="false" />
 
-
+    <Preference
+        android:key="aggressive_battery"
+        android:title="@string/aggressive_battery_title"
+        android:summary="@string/aggressive_battery_summary"
+        android:fragment="com.android.settings.fuelgauge.AggressiveBattery" />
 </PreferenceScreen>
