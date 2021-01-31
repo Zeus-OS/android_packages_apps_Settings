@@ -64,14 +64,13 @@
         android:title="@string/fast_charging_title"
         android:summary="@string/fast_charging_summary"
         settings:controller="com.android.settings.fuelgauge.FastChargingPreferenceController"/>
-        
-    <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
-            android:key="sensor_block"
-            android:fragment="com.zen.hub.fragments.subs.SensorBlockSettings"
-            android:title="@string/sensor_block_title"
-            android:icon="@drawable/ic_sensor_block"
-            android:summary="@string/sensor_block_summary"
-            android:defaultValue="false" />
+
+    <Preference
+        android:key="advanced_battery_saving"
+        android:title="@string/advanced_battery_saving_title"
+        android:summary="@string/advanced_battery_saving_summary"
+        android:icon="@drawable/ic_battery_saving"
+        android:fragment="com.android.settings.fuelgauge.AdvancedPowerSavingOptions" />
 
     <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
         android:fragment="com.android.settings.fuelgauge.smartcharging.SmartChargingSettings"

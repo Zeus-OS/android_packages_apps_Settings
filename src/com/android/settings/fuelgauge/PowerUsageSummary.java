@@ -105,10 +105,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_BATTERY_TEMP = "battery_temp";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String SMART_CHARGING = "smart_charging";
-    private static final String SENSOR_BLOCK = "sensor_block";
 
     private SystemSettingMasterSwitchPreference mSmartCharging;
-    private SystemSettingMasterSwitchPreference mSensorBlock;
 
     private static final String KEY_CURRENT_BATTERY_CAPACITY = "current_battery_capacity";
     private static final String KEY_DESIGNED_BATTERY_CAPACITY = "designed_battery_capacity";
@@ -289,12 +287,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 Settings.System.SMART_CHARGING, 0) == 1));
         mSmartCharging.setOnPreferenceChangeListener(this);
 
-        mSensorBlock = (SystemSettingMasterSwitchPreference) findPreference(SENSOR_BLOCK);
-        int sensorBlock = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.SENSOR_BLOCK, 0, UserHandle.USER_CURRENT);
-        mSensorBlock.setChecked(sensorBlock != 0);
-        mSensorBlock.setOnPreferenceChangeListener(this);
-
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
@@ -307,12 +299,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SMART_CHARGING, value ? 1 : 0);
             return true;
-	  } else if (preference == mSensorBlock) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getContentResolver(),
-		            SENSOR_BLOCK, value ? 1 : 0);
-            return true;
-      }
+	  }
         return false;
     }
 
