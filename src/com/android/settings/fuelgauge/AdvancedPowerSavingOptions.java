@@ -34,6 +34,7 @@ import androidx.preference.*;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import com.android.settings.R;
+import android.content.Intent;
 
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -46,13 +47,16 @@ import java.util.List;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.zenx.support.preferences.SystemSettingMasterSwitchPreference;
 
 public class AdvancedPowerSavingOptions extends DashboardFragment implements
         OnPreferenceChangeListener {
 
     private static final String SENSOR_BLOCK = "sensor_block";
+    private static final String SCREEN_STATE_TOGGLES_ENABLE = "screen_state_toggles_enable_key";
 
     private SystemSettingMasterSwitchPreference mSensorBlock;
+    private SystemSettingMasterSwitchPreference mEnableScreenStateToggles;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -64,6 +68,12 @@ public class AdvancedPowerSavingOptions extends DashboardFragment implements
                 Settings.System.SENSOR_BLOCK, 0, UserHandle.USER_CURRENT);
         mSensorBlock.setChecked(sensorBlock != 0);
         mSensorBlock.setOnPreferenceChangeListener(this);
+
+        mEnableScreenStateToggles = (SystemSettingMasterSwitchPreference) findPreference(SCREEN_STATE_TOGGLES_ENABLE);
+        int enabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.START_SCREEN_STATE_SERVICE, 0, UserHandle.USER_CURRENT);
+        mEnableScreenStateToggles.setChecked(enabled != 0);
+        mEnableScreenStateToggles.setOnPreferenceChangeListener(this);
 
 
     }
@@ -96,7 +106,20 @@ public class AdvancedPowerSavingOptions extends DashboardFragment implements
             Settings.System.putInt(getContentResolver(),
 		            SENSOR_BLOCK, value ? 1 : 0);
             return true;
-       }
+        } else if (preference == mEnableScreenStateToggles) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.START_SCREEN_STATE_SERVICE, value ? 1 : 0, UserHandle.USER_CURRENT);
+            Intent service = (new Intent())
+                .setClassName("com.android.systemui", "com.android.systemui.screenstate.ScreenStateService");
+            if (value) {
+                getActivity().stopService(service);
+                getActivity().startService(service);
+            } else {
+                getActivity().stopService(service);
+            }
+            return true;
+        }
         return false;
     }
 

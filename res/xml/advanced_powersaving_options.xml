@@ -17,7 +17,12 @@
     android:key="advanced_battery_saving_options"
     android:title="@string/advanced_battery_saving_title" >
 
-
+    <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
+        android:key="screen_state_toggles_enable_key"
+        android:fragment="com.android.settings.fuelgauge.ScreenStateToggles"
+        android:title="@string/screen_state_toggles_title"
+        android:summary="@string/screen_state_toggles_summary"
+        android:defaultValue="false" />
 
     <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
             android:key="sensor_block"
