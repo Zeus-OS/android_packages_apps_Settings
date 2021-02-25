@@ -35,6 +35,20 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
+    
+        <!-- Vendor security patch -->
+    <Preference
+        android:key="vendor_security_key"
+        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
+
+            <!-- Security patch -->
+    <Preference
+        android:key="security_key"
+        android:title="@string/security_patch"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
     <!-- Changelog -->
     <Preference
@@ -74,6 +88,14 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildVariantPreferenceController"/>
+
+    <!-- Kernel -->
+    <Preference
+        android:key="kernel_version"
+        android:title="@string/kernel_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
     <!-- ZenX build date -->
     <Preference
