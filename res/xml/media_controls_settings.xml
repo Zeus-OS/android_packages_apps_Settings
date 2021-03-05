@@ -29,13 +29,13 @@
         app:controller="com.android.settings.sound.MediaControlsPreferenceController"
         app:allowDividerAbove="true" />
 
-    <com.zenx.support.preferences.SystemSettingSwitchPreference
+    <com.zeus.support.preferences.SystemSettingSwitchPreference
         android:key="adaptive_playback_enabled"
         android:title="@string/adaptive_playback_title"
         android:summary="@string/adaptive_playback_summary"
         android:defaultValue="false" />
 
-    <com.zenx.support.preferences.SystemSettingSeekBarPreference
+    <com.zeus.support.preferences.SystemSettingSeekBarPreference
         android:key="adaptive_playback_timeout"
         android:title="@string/adaptive_playback_timeout_title"
         android:defaultValue="30"

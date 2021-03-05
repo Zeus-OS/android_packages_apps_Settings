@@ -14,7 +14,7 @@
     limitations under the License.
  */
 
-package com.android.settings.zenx;
+package com.android.settings.zeus;
 
 import android.app.Fragment;
 import android.content.res.Resources;
@@ -50,7 +50,7 @@ public class Changelog extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";

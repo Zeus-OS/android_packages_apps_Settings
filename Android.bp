@@ -28,12 +28,12 @@ android_library {
     ],
 
     srcs: ["src/**/*.java", 
-        "ZenHub/src/**/*.java"],
+        "Olymp/src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.zen.hub"],
+    aaptflags: ["--extra-packages com.settings.olymp"],
 
     resource_dirs: ["res",
-                    "ZenHub/res"
+                    "Olymp/res"
     ],
 
     static_libs: [

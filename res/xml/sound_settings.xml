@@ -164,7 +164,7 @@
         android:title="@string/volume_steps_title"
         android:summary="@string/volume_steps_summary"
         android:icon="@drawable/ic_volume_steps"
-        android:fragment="com.android.settings.zenx.sound.VolumeSteps"
+        android:fragment="com.android.settings.zeus.sound.VolumeSteps"
         android:order="-130" />
 
     <!-- Also vibrate for calls -->
@@ -195,7 +195,7 @@
         android:visibility="gone">
 
         <!-- Custom ringtone vibration pattern 1 -->
-        <com.zenx.support.preferences.CustomSeekBarPreference
+        <com.zeus.support.preferences.CustomSeekBarPreference
             android:key="custom_vibration_pattern1"
             android:order="-123"
             android:max="1000"
@@ -205,7 +205,7 @@
             android:dependency="vibrate_for_calls"/>
 
         <!-- Custom ringtone vibration pattern 2 -->
-        <com.zenx.support.preferences.CustomSeekBarPreference
+        <com.zeus.support.preferences.CustomSeekBarPreference
             android:key="custom_vibration_pattern2"
             android:order="-122"
             android:max="1000"
@@ -215,7 +215,7 @@
             android:dependency="vibrate_for_calls"/>
 
         <!-- Custom ringtone vibration pattern 3 -->
-        <com.zenx.support.preferences.CustomSeekBarPreference
+        <com.zeus.support.preferences.CustomSeekBarPreference
             android:key="custom_vibration_pattern3"
             android:order="-121"
             android:max="1000"

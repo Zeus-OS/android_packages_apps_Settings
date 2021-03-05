@@ -30,29 +30,29 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class ZenxUpdatePreferenceController extends BasePreferenceController {
+public class ZeusUpdatePreferenceController extends BasePreferenceController {
 
-    private static final String KEY_SYSTEM_UPDATE_SETTINGS = "zenx_update_settings";
+    private static final String KEY_SYSTEM_UPDATE_SETTINGS = "zeus_update_settings";
 
-    private static final String ZENX_BUILD_TYPE_PROP = "ro.zenx.releasetype";
-    private static final String ZENX_UPDATER_PACKAGE = "com.zenxroms.updater";
+    private static final String ZEUS_BUILD_TYPE_PROP = "ro.zeus.releasetype";
+    private static final String ZEUS_UPDATER_PACKAGE = "com.zeusroms.updater";
 
     private final UserManager mUm;
 
-    public ZenxUpdatePreferenceController(Context context) {
+    public ZeusUpdatePreferenceController(Context context) {
         super(context, KEY_SYSTEM_UPDATE_SETTINGS);
         mUm = UserManager.get(context);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        String buildtype = SystemProperties.get(ZENX_BUILD_TYPE_PROP,"unofficial");
+        String buildtype = SystemProperties.get(ZEUS_BUILD_TYPE_PROP,"unofficial");
         if (!mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
             return UNSUPPORTED_ON_DEVICE;
         }
         try {
             PackageManager pm = mContext.getPackageManager();
-            pm.getPackageInfo(ZENX_UPDATER_PACKAGE, PackageManager.GET_ACTIVITIES);
+            pm.getPackageInfo(ZEUS_UPDATER_PACKAGE, PackageManager.GET_ACTIVITIES);
         } catch (Exception e) {
             return UNSUPPORTED_ON_DEVICE;
         }

@@ -36,7 +36,7 @@ import com.android.settingslib.widget.FooterPreference;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.zenx.support.preferences.CustomSeekBarPreference;
+import com.zeus.support.preferences.CustomSeekBarPreference;
 
 /**
  * Settings screen for Smart charging
@@ -100,7 +100,7 @@ public class SmartChargingSettings extends DashboardFragment implements OnPrefer
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 
     @Override

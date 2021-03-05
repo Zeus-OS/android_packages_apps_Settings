@@ -24,7 +24,7 @@ import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.zenx.support.preferences.SystemSettingListPreference;
+import com.zeus.support.preferences.SystemSettingListPreference;
 
 public class TimeoutLockscreenPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {

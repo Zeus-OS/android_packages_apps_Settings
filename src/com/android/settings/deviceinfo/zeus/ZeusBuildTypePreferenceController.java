@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 ZenX-OS
+ * Copyright (C) 2020 Zeus-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.zenx;
+package com.android.settings.deviceinfo.zeus;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -22,13 +22,13 @@ import android.os.SystemProperties;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class ZenxVersionPreferenceController extends BasePreferenceController {
+public class ZeusBuildTypePreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "ZenxVersion";
+    private static final String TAG = "ZeusBuildType";
 
-    private static final String KEY_ZENX_VERSION = "ro.modversion";
+    private static final String KEY_ZEUS_BUILD_TYPE = "ro.zeus.releasetype";
 
-    public ZenxVersionPreferenceController(Context context, String key) {
+    public ZeusBuildTypePreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -39,7 +39,7 @@ public class ZenxVersionPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_ZENX_VERSION,
-                mContext.getString(R.string.zenx_version_default));
+        return SystemProperties.get(KEY_ZEUS_BUILD_TYPE,
+                mContext.getString(R.string.zeus_build_default));
     }
 }

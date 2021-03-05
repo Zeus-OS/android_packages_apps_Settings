@@ -55,7 +55,7 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.widget.LayoutPreference;
 
-import com.zen.hub.preferences.CustomDialogPref;
+import com.settings.olymp.preferences.CustomDialogPref;
 
 import java.util.UUID;
 

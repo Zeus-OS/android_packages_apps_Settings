@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2020 ZenX-OS
+  Copyright (C) 2020 Zeus-OS
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -18,24 +18,24 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="zenx_version_screen"
-    android:title="@string/zenx_version"
-    settings:keywords="@string/keywords_zenx_version">
+    android:key="zeus_version_screen"
+    android:title="@string/zeus_version"
+    settings:keywords="@string/keywords_zeus_version">
 
-    <!-- ZenX Logo Header -->
+    <!-- Zeus Logo Header -->
     <Preference 
-        android:key="zenx_logo"
+        android:key="zeus_logo"
         android:order="-500"
-        android:layout="@layout/zenx_logo" />
+        android:layout="@layout/zeus_logo" />
 
-    <!-- ZenX version -->
-    <Preference
-        android:key="zenx_version"
-        android:title="@string/zenx_version"
+    <!-- Zeus version -->
+    <!-- <Preference
+        android:key="zeus_version"
+        android:title="@string/zeus_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
-    
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusVersionPreferenceController"/>
+     -->
         <!-- Vendor security patch -->
     <Preference
         android:key="vendor_security_key"
@@ -55,39 +55,39 @@
         android:key="changelog"
         android:title="@string/changelog_title"
         android:summary="@string/changelog_summary"
-        android:fragment="com.android.settings.zenx.Changelog" />
+        android:fragment="com.android.settings.zeus.Changelog" />
 
-    <!-- ZenX maintainer -->
+    <!-- Zeus maintainer -->
     <Preference
         android:key="maintainer"
         android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxMaintainerPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusMaintainerPreferenceController"/>
 
-    <!-- ZenX Device -->
+    <!-- Zeus Device -->
     <Preference
-        android:key="zenx_device"
-        android:title="@string/zenx_device"
+        android:key="zeus_device"
+        android:title="@string/zeus_device"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxDevicePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusDevicePreferenceController"/>
 
-    <!-- ZenX build type -->
+    <!-- Zeus build type -->
     <Preference
-        android:key="zenx_build_type"
-        android:title="@string/zenx_build_type"
+        android:key="zeus_build_type"
+        android:title="@string/zeus_build_type"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildTypePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusBuildTypePreferenceController"/>
         
-    <!-- ZenX build variant -->
+    <!-- Zeus build variant -->
     <Preference
-        android:key="zenx_build_variant"
-        android:title="@string/zenx_variant"
+        android:key="zeus_build_variant"
+        android:title="@string/zeus_variant"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildVariantPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusBuildVariantPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
@@ -97,12 +97,12 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- ZenX build date -->
+    <!-- Zeus build date -->
     <Preference
-        android:key="zenx_build_date"
-        android:title="@string/zenx_build_date"
+        android:key="zeus_build_date"
+        android:title="@string/zeus_build_date"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxBuildDatePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusBuildDatePreferenceController"/>
 
 </PreferenceScreen>

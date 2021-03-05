@@ -16,39 +16,18 @@
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="132dp"
+    android:layout_height="150dp"
     android:layout_marginLeft="0dip"
     android:layout_marginRight="0dip"
     android:background="@drawable/logo_banner_shape"
     android:paddingTop="8dp"
     android:orientation="vertical">
 
-    <TextView
+    <ImageView
+        android:id="@+id/zeus_slogan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dip"
-        android:layout_gravity="center"
-        android:singleLine="true"
-        android:paddingLeft="58dp"
-        android:text="@string/zenx_title"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textSize="30sp"
-        android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
-        android:ellipsize="marquee"
-        android:fadingEdge="horizontal" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dip"
-        android:layout_gravity="bottom|right"
-        android:singleLine="true"
-        android:paddingLeft="58dp"
-        android:text="@string/zenx_slogan"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textSize="14sp"
-        android:fontFamily="@*android:string/config_headlineFontFamilyMedium"
-        android:ellipsize="marquee"
-        android:fadingEdge="horizontal" />
+        android:layout_gravity="top|center"
+        android:src="@drawable/zeus_slogan"/>
 
 </LinearLayout>

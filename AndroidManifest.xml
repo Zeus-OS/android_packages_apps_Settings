@@ -3446,19 +3446,19 @@
             </intent-filter>
         </activity>
 
-        <!-- ZenHub -->
-        <activity android:name=".Settings$ZenHubActivity"
-            android:label="@string/zenhub_settings_title"
-            android:icon="@drawable/ic_homepage_zenhub"
+        <!-- Olymp -->
+        <activity android:name=".Settings$OlympActivity"
+            android:label="@string/olymp_settings_title"
+            android:icon="@drawable/ic_homepage_olymp"
             android:parentActivityName="com.android.settings">
             <intent-filter android:priority="31">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.ZenHub" />
+                android:value="com.settings.olymp.Olymp" />
         </activity>
-        <receiver android:name="com.zen.hub.fragments.subs.GamingModeReceiver">
+        <receiver android:name="com.settings.olymp.fragments.subs.GamingModeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.GAMING_MODE_TURN_OFF" />
                 <action android:name="android.intent.action.GAMING_MODE_TURN_ON" />
@@ -3473,7 +3473,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.fragments.subs.GamingModeReceiver" />
+                android:value="com.settings.olymp.fragments.subs.GamingModeReceiver" />
         </activity>
         <activity android:name=".Settings$SmartPixelsActivity"
             android:label="@string/smart_pixels_title"
@@ -3484,7 +3484,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.fragments.subs.SmartPixels" />
+                android:value="com.settings.olymp.fragments.subs.SmartPixels" />
         </activity>
         <activity android:name="Settings$OmniJawsSettingsActivity"
                   android:label="@string/weather_title"
@@ -3494,9 +3494,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.fragments.subs.OmniJawsSettings" />
+                android:value="com.settings.olymp.fragments.subs.OmniJawsSettings" />
             </activity>
-         <activity android:name="Settings$ZenxThemeActivity"
+         <activity android:name="Settings$ZeusThemeActivity"
                   android:label="@string/theme_customization_category"
                   android:taskAffinity="com.android.settings" >
             <intent-filter>
@@ -3504,9 +3504,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.fragments.ThemingSettings" />
+                android:value="com.settings.olymp.fragments.ThemingSettings" />
         </activity>
-         <activity android:name="Settings$ZenxLsClockPluginActivity"
+         <activity android:name="Settings$ZeusLsClockPluginActivity"
                   android:label="@string/ls_clock_plugin_Style"
                   android:taskAffinity="com.android.settings" >
             <intent-filter>
@@ -3514,7 +3514,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.zen.hub.fragments.subs.LsClock" />
+                android:value="com.settings.olymp.fragments.subs.LsClock" />
         </activity>
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>

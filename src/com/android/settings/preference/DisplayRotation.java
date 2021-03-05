@@ -62,7 +62,7 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.ZENX_SETTINGS;
+        return MetricsEvent.ZEUS_SETTINGS;
     }
 
     @Override

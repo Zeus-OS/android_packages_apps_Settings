@@ -120,20 +120,20 @@
     <!-- Android version -->
     <Preference
         android:key="firmware_version"
-        android:order="42"
+        android:order="43"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
-    <!-- ZenX version -->
+    <!-- Zeus version -->
     <Preference
-        android:key="zenx_version"
-        android:order="43"
-        android:title="@string/zenx_version"
+        android:key="zeus_version"
+        android:order="42"
+        android:title="@string/zeus_version"
         android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.zenx.ZenxVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.zenx.ZenxVersionPreferenceController"/>
+        android:fragment="com.android.settings.deviceinfo.zeus.ZeusVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.zeus.ZeusVersionPreferenceController"/>
 
     <!--IP address -->
     <Preference

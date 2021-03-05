@@ -39,7 +39,7 @@ import android.widget.TextView;
 
 import com.android.settingslib.applications.ApplicationsState;
 
-import com.android.internal.util.zenx.cutout.CutoutFullscreenController;
+import com.android.internal.util.zeus.cutout.CutoutFullscreenController;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -370,6 +370,6 @@ public class DisplayCutoutForceFullscreenSettings extends SettingsPreferenceFrag
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.ZENX_SETTINGS;
+        return MetricsEvent.ZEUS_SETTINGS;
     }
 }

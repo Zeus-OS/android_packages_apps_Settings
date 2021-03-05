@@ -23,7 +23,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.settings.core.TogglePreferenceController;
-import com.android.internal.util.zenx.ZenxUtils;
+import com.android.internal.util.zeus.ZeusUtils;
 
 public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreferenceController {
 
@@ -47,7 +47,7 @@ public class AmbientDisplayAlwaysOnPreferenceController extends TogglePreference
     @Override
     public int getAvailabilityStatus() {
         return isAvailable(getConfig())
-                && !ZenxUtils.hasAltAmbientDisplay(mContext.getApplicationContext())
+                && !ZeusUtils.hasAltAmbientDisplay(mContext.getApplicationContext())
                 && !SystemProperties.getBoolean(PROP_AWARE_AVAILABLE, false) ?
                 AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }

@@ -20,7 +20,7 @@ import android.content.Context;
 import android.provider.Settings;
 import android.os.UserHandle;
 
-import com.android.internal.util.zenx.cutout.CutoutFullscreenController;
+import com.android.internal.util.zeus.cutout.CutoutFullscreenController;
 
 import com.android.settings.core.BasePreferenceController;
 

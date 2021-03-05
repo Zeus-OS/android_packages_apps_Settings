@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 ZenX-OS
+ * Copyright (C) 2020 Zeus-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.zenx;
+package com.android.settings.deviceinfo.zeus;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -30,16 +30,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class ZenxVersionSettings extends DashboardFragment {
+public class ZeusVersionSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.zenx_version;
+        return R.xml.zeus_version;
     }
 
     @Override
     protected String getLogTag() {
-        return "ZenxVersionSettings";
+        return "ZeusVersionSettings";
     }
 
     @Override
@@ -55,7 +55,7 @@ public class ZenxVersionSettings extends DashboardFragment {
                     final ArrayList<SearchIndexableResource> result = new ArrayList<>();
 
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.zenx_version;
+                    sir.xmlResId = R.xml.zeus_version;
                     result.add(sir);
                     return result;
                 }

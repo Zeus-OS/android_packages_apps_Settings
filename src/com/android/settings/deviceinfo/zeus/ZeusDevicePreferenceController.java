@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2020 Zeus-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,31 +14,32 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.zenx;
+package com.android.settings.deviceinfo.zeus;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.text.TextUtils;
-
-import androidx.preference.Preference;
+import android.os.SystemProperties;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class ZenxMaintainerPreferenceController extends BasePreferenceController {
+public class ZeusDevicePreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "ZenxMaintainerPreferenceController";
+    private static final String TAG = "ZeusDevice";
 
-    public ZenxMaintainerPreferenceController(Context context, String key) {
+    private static final String KEY_ZEUS_DEVICE = "ro.zeus.device";
+
+    public ZeusDevicePreferenceController(Context context, String key) {
         super(context, key);
     }
 
+    @Override
     public int getAvailabilityStatus() {
         return AVAILABLE;
     }
 
+    @Override
     public CharSequence getSummary() {
-        String maintainer = mContext.getResources().getString(R.string.zenx_maintainer);
-        return maintainer;
+        return SystemProperties.get(KEY_ZEUS_DEVICE,
+                mContext.getString(R.string.zeus_build_default));
     }
 }

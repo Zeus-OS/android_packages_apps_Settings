@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 ZenX-OS
+<!-- Copyright (C) 2020 Zeus-OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,24 +15,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- ZenX OS -->
-    <string name="zenx_title" translatable="false">ZenX-OS</string>
-    <string name="zenx_slogan" translatable="false">Developed for excellence</string>
+    <!-- Zeus OS -->
+    <string name="zeus_title" translatable="false">Zeus-OS</string>
+    <string name="zeus_slogan" translatable="false">Developed to rule.</string>
     
-    <!-- ZenX-OS Version -->
-    <string name="zenx_version">ZenX Version</string>
-    <string name="zenx_version_default">Unknown</string>
-    <string name="keywords_zenx_version">ZenX Version, zenx</string>
-    <string name="zenx_build_date">Build Date</string>
-    <string name="zenx_build_default">Unknown</string>
-    <string name="zenx_build_type">Build Status</string>
-    <string name="zenx_device">ZenX Device</string>
-    <string name="zenx_variant">ZenX Variant</string>
-    <string name="zenx_build_variant_default">Unknown</string>
+    <!-- Zeus-OS Version -->
+    <string name="zeus_version">Zeus Version</string>
+    <string name="zeus_version_default">Unknown</string>
+    <string name="keywords_zeus_version">Zeus Version, zeus</string>
+    <string name="zeus_build_date">Build Date</string>
+    <string name="zeus_build_default">Unknown</string>
+    <string name="zeus_build_type">Build Status</string>
+    <string name="zeus_device">Zeus Device</string>
+    <string name="zeus_variant">Zeus Variant</string>
+    <string name="zeus_build_variant_default">Unknown</string>
 
-    <!-- ZenX maintainer -->
+    <!-- Zeus maintainer -->
     <string name="maintainer">Maintainer</string>
-    <string name="zenx_maintainer" translatable="false">Unofficial Maintainer</string>
+    <string name="zeus_maintainer" translatable="false">Unofficial Maintainer</string>
 
     <!-- Battery temp -->
     <string name="battery_temp">Battery temperature</string>
@@ -54,9 +54,9 @@
     <string name="changelog_summary">Since the last update</string>
     <string name="changelog_error">Unable to load changelog</string>
 
-    <!-- ZenHub -->
-    <string name="zenhub_settings_title">Zen Hub</string>
-    <string name="zenhub_settings_summary">Feel the power of ZenX-OS!</string>
+    <!-- Olymp -->
+    <string name="olymp_settings_title">The Olymp</string>
+    <string name="olymp_settings_summary">The Place to rule the world!</string>
     
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
@@ -64,10 +64,10 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
-    <!-- Zenx Updater -->
-    <string name="zenx_updater_title">ZenX Updater</string>
-    <string name="zenx_updater_summary">Check for the latest version of the rom</string>
-    <string name="keywords_zenx_updater">ZenxOTA, updater, OTA</string>
+    <!-- Zeus Updater -->
+    <string name="zeus_updater_title">Zeus Updater</string>
+    <string name="zeus_updater_summary">Check for the latest version of the rom</string>
+    <string name="keywords_zeus_updater">ZeusOTA, updater, OTA</string>
 
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>

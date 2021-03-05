@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.zenx.sound;
+package com.android.settings.zeus.sound;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -139,7 +139,7 @@ public class VolumeSteps extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 
     private SharedPreferences getDefaultStepsPrefs() {

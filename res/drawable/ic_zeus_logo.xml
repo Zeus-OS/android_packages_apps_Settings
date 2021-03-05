@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2020 Zenx-OS
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="53"
+    android:viewportHeight="20"
+    android:width="53dp"
+    android:height="20dp">
+    <group>
+        <clip-path
+            android:pathData="M0 0H52.6271V20H0V0Z" />
+        <path
+            android:pathData="M14.567 14.9576H25.753V12.1104H18.9196V11.1851H25.753V8.76494H18.9196V7.83959H25.753V4.99237H17.0837L15.7603 8.96259L13.149 10.7035L14.567 14.9576Z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M39.2278 9.96077V4.99237H35.5264V9.96077C35.5264 11.0142 35.142 11.9681 32.9639 11.9681C30.7858 11.9681 30.4014 11.0285 30.4014 9.96077V4.99237H26.7V9.96077C26.7 13.4344 28.5792 15.1 32.9639 15.1C37.3344 15.1 39.2278 13.4201 39.2278 9.96077Z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M39.9 11.4413C39.9 14.4024 42.1778 15.1 46.2635 15.1C50.3493 15.1 52.6271 14.4024 52.6271 11.6549C52.6271 9.04966 50.1927 8.77917 46.2635 8.62258C44.0997 8.53716 43.7438 8.5514 43.7438 8.16702C43.7438 7.78265 44.0997 7.69723 45.8365 7.69723C47.6444 7.69723 48.4986 7.81112 48.4986 8.33785H52.2C52.2 5.78959 50.0076 4.85001 46.1212 4.85001C42.192 4.85001 40.0424 5.78959 40.0424 7.98195C40.0424 10.3024 41.7649 11.0427 46.2635 11.1851C48.5983 11.2563 48.9257 11.3132 48.9257 11.7403C48.9257 12.1104 48.5983 12.2528 46.4059 12.2528C44.0569 12.2528 43.6014 11.9254 43.6014 11.4413H39.9Z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M4 5L17 0L10.5 5H15.5L14.5 8L8.5 12H12L13 15L0 20L6.5 15H1.5L2.5 12L8.5 8H5L4 5Z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M3 6.5L3.5 8H2L3 6.5Z"
+            android:fillColor="#FFFFFF" />
+    </group>
+</vector>

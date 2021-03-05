@@ -25,15 +25,15 @@
         <item name="slicePreferenceStyle">@style/SlicePreference</item>
         <item name="seekBarPreferenceStyle">@style/SettingsSeekBarPreference</item>
         <item name="twoStateButtonPreferenceStyle">@style/TwoStateButtonPreference</item>
-        <item name="preferenceCategoryStyle">@style/Preference.Zenx.Category</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Zeus.Category</item>
         <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle
         </item>
     </style>
 
     <style name="SettingsCategoryPreference" parent="Preference.Category.Material" />
 
-    <style name="Preference.Zenx.Category" parent="@style/Preference.Category">
-        <item name="android:layout">@layout/zenx_preference_category_material</item>
+    <style name="Preference.Zeus.Category" parent="@style/Preference.Category">
+        <item name="android:layout">@layout/zeus_preference_category_material</item>
         <item name="android:selectable">false</item>
         <item name="allowDividerBelow">false</item>
         <item name="android:shouldDisableView">false</item>

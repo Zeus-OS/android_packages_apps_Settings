@@ -13,7 +13,7 @@
     *;
 }
 
--keep class com.zen.hub.**
+-keep class com.settings.olymp.**
 
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;

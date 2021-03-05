@@ -21,9 +21,9 @@
     android:title="@string/header_category_system"
     settings:initialExpandedChildrenCount="8">
 
-    <!-- ZenX Logo Header -->
+    <!-- Zeus Logo Header -->
     <Preference 
-        android:key="zenx_logo"
+        android:key="zeus_logo"
         android:order="-500"
         android:layout="@layout/system_animation" />
 
@@ -64,15 +64,15 @@
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
     </Preference>
 
-    <!-- ZenX Updater
+    <!-- Zeus Updater
     <Preference
-        android:key="zenx_updater"
-        android:title="@string/zenx_updater_title"
-        android:summary="@string/zenx_updater_summary"
+        android:key="zeus_updater"
+        android:title="@string/zeus_updater_title"
+        android:summary="@string/zeus_updater_summary"
         android:icon="@drawable/ic_system_update"
         android:order="-35"
-        settings:keywords="@string/keywords_zenx_updater"
-        settings:controller="com.android.settings.system.ZenxUpdatePreferenceController">
+        settings:keywords="@string/keywords_zeus_updater"
+        settings:controller="com.android.settings.system.ZeusUpdatePreferenceController">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
     </Preference> -->
 

@@ -21,7 +21,7 @@
     android:key="smart_charging_screen"
     android:title="@string/smart_charging_title">
 
-    <com.zenx.support.preferences.CustomSeekBarPreference
+    <com.zeus.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"
@@ -29,7 +29,7 @@
         settings:units="%"
         android:defaultValue="80" />
 
-    <com.zenx.support.preferences.CustomSeekBarPreference
+    <com.zeus.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_resume_level"
         android:title="@string/smart_charging_resume_level_title"
         android:max="99"
@@ -37,7 +37,7 @@
         settings:units="%"
         android:defaultValue="60" />
 
-    <com.zenx.support.preferences.SystemSettingSwitchPreference
+    <com.zeus.support.preferences.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 ZenX-OS
+     Copyright (C) 2020 Zeus-OS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,17 +17,17 @@
     android:key="advanced_battery_saving_options"
     android:title="@string/advanced_battery_saving_title" >
 
-    <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
+    <com.zeus.support.preferences.SystemSettingMasterSwitchPreference
         android:key="screen_state_toggles_enable_key"
         android:fragment="com.android.settings.fuelgauge.ScreenStateToggles"
         android:title="@string/screen_state_toggles_title"
         android:summary="@string/screen_state_toggles_summary"
         android:defaultValue="false" />
 
-    <com.zenx.support.preferences.SystemSettingMasterSwitchPreference
+    <com.zeus.support.preferences.SystemSettingMasterSwitchPreference
             android:key="sensor_block"
-            android:fragment="com.zen.hub.fragments.subs.SensorBlockSettings"
-android:title="@string/sensor_block_title"
+            android:fragment="com.settings.olymp.fragments.subs.SensorBlockSettings"
+            android:title="@string/sensor_block_title"
             android:summary="@string/sensor_block_summary"
             android:defaultValue="false" />
 

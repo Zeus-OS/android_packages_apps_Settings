@@ -29,7 +29,7 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-import com.android.internal.util.zenx.ZenxUtils;
+import com.android.internal.util.zeus.ZeusUtils;
 
 public class AmbientDisplayNotificationsPreferenceController extends
         TogglePreferenceController implements Preference.OnPreferenceChangeListener {
@@ -81,7 +81,7 @@ public class AmbientDisplayNotificationsPreferenceController extends
 
     @Override
     public int getAvailabilityStatus() {
-        return !ZenxUtils.hasAltAmbientDisplay(mContext.getApplicationContext()) &&
+        return !ZeusUtils.hasAltAmbientDisplay(mContext.getApplicationContext()) &&
                getAmbientConfig().pulseOnNotificationAvailable()
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }

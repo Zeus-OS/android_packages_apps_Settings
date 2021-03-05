@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 ZenX-OS
+     Copyright (C) 2020 Zeus-OS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -16,10 +16,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingTop="@dimen/zenx_preference_category_padding_top"
+    android:paddingTop="@dimen/zeus_preference_category_padding_top"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:minHeight="@dimen/zenx_preference_category_height"
+    android:minHeight="@dimen/zeus_preference_category_height"
     android:paddingStart="?android:listPreferredItemPaddingStart"
     android:paddingEnd="?android:listPreferredItemPaddingEnd">
 
@@ -35,6 +35,6 @@
         android:background="?android:attr/colorAccent"
         android:layout_width="fill_parent"
         android:layout_height="1.0px"
-        android:layout_marginStart="@dimen/zenx_preference_category_line_margin_start" />
+        android:layout_marginStart="@dimen/zeus_preference_category_line_margin_start" />
 
 </LinearLayout>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 ZenX-OS
+ * Copyright (C) 2020 Zeus-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,6 @@ public class AggressiveBattery extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 }

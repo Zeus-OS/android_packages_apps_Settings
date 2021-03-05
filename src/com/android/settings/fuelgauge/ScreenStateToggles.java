@@ -2,7 +2,7 @@
  * Copyright (C) 2013 Android Open Kang Project
  *           (C) 2017 faust93 at monumentum@gmail.com
  *           (C) 2018 Havoc OS
- *           (C) 2020 ZenX-OS
+ *           (C) 2020 Zeus-OS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,8 +39,8 @@ import android.net.ConnectivityManager;
 
 import com.android.settings.R;
 
-import com.zenx.support.preferences.CustomSeekBarPreference;
-import com.zenx.support.preferences.SystemSettingSwitchPreference;
+import com.zeus.support.preferences.CustomSeekBarPreference;
+import com.zeus.support.preferences.SystemSettingSwitchPreference;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -199,13 +199,13 @@ public class ScreenStateToggles extends SettingsPreferenceFragment
 
     private void restartService(){
         Intent service = (new Intent())
-                .setClassName("com.android.systemui", "com.android.systemui.zenx.screenstate.ScreenStateService");
+                .setClassName("com.android.systemui", "com.android.systemui.zeus.screenstate.ScreenStateService");
         getActivity().stopService(service);
         getActivity().startService(service);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 }

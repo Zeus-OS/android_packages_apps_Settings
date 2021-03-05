@@ -80,7 +80,7 @@ import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings;
 import com.android.settings.deviceinfo.legal.ModuleLicensesDashboard;
-import com.android.settings.deviceinfo.zenx.ZenxVersionSettings;
+import com.android.settings.deviceinfo.zeus.ZeusVersionSettings;
 import com.android.settings.display.NightDisplaySettings;
 import com.android.settings.display.darkmode.DarkModeSettingsFragment;
 import com.android.settings.dream.DreamSettings;
@@ -162,12 +162,12 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.zen.hub.ZenHub;
-import com.zen.hub.fragments.subs.GamingMode;
-import com.zen.hub.fragments.subs.SmartPixels;
-import com.zen.hub.fragments.subs.OmniJawsSettings;
-import com.zen.hub.fragments.ThemingSettings;
-import com.zen.hub.fragments.subs.LsClock;
+import com.settings.olymp.Olymp;
+import com.settings.olymp.fragments.subs.GamingMode;
+import com.settings.olymp.fragments.subs.SmartPixels;
+import com.settings.olymp.fragments.subs.OmniJawsSettings;
+import com.settings.olymp.fragments.ThemingSettings;
+import com.settings.olymp.fragments.subs.LsClock;
 
 public class SettingsGateway {
 
@@ -202,7 +202,7 @@ public class SettingsGateway {
             ModuleLicensesDashboard.class.getName(),
             ManageApplications.class.getName(),
             FirmwareVersionSettings.class.getName(),
-            ZenxVersionSettings.class.getName(),
+            ZeusVersionSettings.class.getName(),
             ManageAssist.class.getName(),
             ProcessStatsUi.class.getName(),
             NotificationStation.class.getName(),
@@ -318,7 +318,7 @@ public class SettingsGateway {
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
-            ZenHub.class.getName(),
+            Olymp.class.getName(),
             RunningServices.class.getName(),
             GamingMode.class.getName(),
             SmartPixels.class.getName(),
@@ -364,12 +364,12 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
-            Settings.ZenHubActivity.class.getName(),
+            Settings.OlympActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.GamingModeActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
-            Settings.ZenxThemeActivity.class.getName(),
-            Settings.ZenxLsClockPluginActivity.class.getName()
+            Settings.ZeusThemeActivity.class.getName(),
+            Settings.ZeusLsClockPluginActivity.class.getName()
     };
 }

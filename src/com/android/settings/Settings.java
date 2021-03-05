@@ -234,7 +234,7 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
-    public static class ZenHubActivity extends SettingsActivity {}
+    public static class OlympActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 
     /**
@@ -246,6 +246,6 @@ public class Settings extends SettingsActivity {
     public static class SmartPixelsActivity extends SettingsActivity {}
 
     public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class ZenxThemeActivity extends SettingsActivity {}
-    public static class ZenxLsClockPluginActivity extends SettingsActivity {}
+    public static class ZeusThemeActivity extends SettingsActivity {}
+    public static class ZeusLsClockPluginActivity extends SettingsActivity {}
 }

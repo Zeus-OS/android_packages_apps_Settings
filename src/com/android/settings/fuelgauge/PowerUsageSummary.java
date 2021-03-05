@@ -78,13 +78,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.Integer;
 import java.util.ArrayList;
-import com.zenx.support.preferences.SystemSettingMasterSwitchPreference;
-import com.zenx.support.preferences.SystemSettingSwitchPreference;
+import com.zeus.support.preferences.SystemSettingMasterSwitchPreference;
+import com.zeus.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.Collections;
 import java.util.List;
 
-import com.zenx.support.preferences.SystemSettingMasterSwitchPreference;
+import com.zeus.support.preferences.SystemSettingMasterSwitchPreference;
 /**
  * Displays a list of apps and subsystems that consume power, ordered by how much power was
  * consumed since the last time it was unplugged.

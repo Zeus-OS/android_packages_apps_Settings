@@ -28,8 +28,8 @@ import static android.os.UserHandle.USER_SYSTEM;
 
 import androidx.preference.*;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import com.android.internal.util.zenx.ThemesUtils;
-import com.android.internal.util.zenx.ZenxUtils;
+import com.android.internal.util.zeus.ThemesUtils;
+import com.android.internal.util.zeus.ZeusUtils;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
@@ -247,17 +247,17 @@ public class DarkModeSettingsFragment extends DashboardFragment implements OnPre
     private void setupThemeSwitchPref() {
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
         mThemeSwitch.setOnPreferenceChangeListener(this);
-        if (ZenxUtils.isThemeEnabled("com.android.theme.darkgrey.system")) {
+        if (ZeusUtils.isThemeEnabled("com.android.theme.darkgrey.system")) {
             mThemeSwitch.setValue("7");
-        } else if (ZenxUtils.isThemeEnabled("com.android.theme.pitchblack.system")) {
+        } else if (ZeusUtils.isThemeEnabled("com.android.theme.pitchblack.system")) {
             mThemeSwitch.setValue("6");
-        } else if (ZenxUtils.isThemeEnabled("com.android.theme.materialocean.system")) {
+        } else if (ZeusUtils.isThemeEnabled("com.android.theme.materialocean.system")) {
             mThemeSwitch.setValue("8");
-        } else if (ZenxUtils.isThemeEnabled("com.android.theme.chocox.system")) {
+        } else if (ZeusUtils.isThemeEnabled("com.android.theme.chocox.system")) {
             mThemeSwitch.setValue("5");
-        } else if (ZenxUtils.isThemeEnabled("com.android.theme.bakedgreen.system")) {
+        } else if (ZeusUtils.isThemeEnabled("com.android.theme.bakedgreen.system")) {
             mThemeSwitch.setValue("4");
-        } else if (ZenxUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
+        } else if (ZeusUtils.isThemeEnabled("com.android.theme.solarizeddark.system")) {
             mThemeSwitch.setValue("3");
         } else if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_YES) {
             mThemeSwitch.setValue("2");

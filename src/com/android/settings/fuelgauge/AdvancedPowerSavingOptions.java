@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2020 ZenX-OS
+ *  Copyright (C) 2020 Zeus-OS
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -47,7 +47,7 @@ import java.util.List;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.zenx.support.preferences.SystemSettingMasterSwitchPreference;
+import com.zeus.support.preferences.SystemSettingMasterSwitchPreference;
 
 public class AdvancedPowerSavingOptions extends DashboardFragment implements
         OnPreferenceChangeListener {
@@ -125,6 +125,6 @@ public class AdvancedPowerSavingOptions extends DashboardFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZENX_SETTINGS;
+        return MetricsProto.MetricsEvent.ZEUS_SETTINGS;
     }
 }
