@@ -86,8 +86,8 @@ import java.util.List;
 
 import com.zeus.support.preferences.SystemSettingMasterSwitchPreference;
 /**
- * Displays a list of apps and subsystems that consume power, ordered by how much power was
- * consumed since the last time it was unplugged.
+ * Displays a list of apps and subsystems that consume power, ordered by how much power was consumed
+ * since the last time it was unplugged.
  */
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class PowerUsageSummary extends PowerUsageBase implements OnLongClickListener,
@@ -282,6 +282,9 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 KEY_TIME_SINCE_LAST_FULL_CHARGE);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
 
+        if (Utils.isBatteryPresent(getContext())) {
+            restartBatteryInfoLoader();
+        }
         mSmartCharging = (SystemSettingMasterSwitchPreference) findPreference(SMART_CHARGING);
         mSmartCharging.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.SMART_CHARGING, 0) == 1));
@@ -409,6 +412,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     protected void refreshUi(@BatteryUpdateType int refreshType) {
         final Context context = getContext();
         if (context == null) {
+            return;
+        }
+        // Skip refreshing UI if battery is not present.
+        if (!mIsBatteryPresent) {
             return;
         }
 
@@ -550,6 +557,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     void restartBatteryInfoLoader() {
         if (getContext() == null) {
+            return;
+        }
+        // Skip restartBatteryInfoLoader if battery is not present.
+        if (!mIsBatteryPresent) {
             return;
         }
         getLoaderManager().restartLoader(BATTERY_INFO_LOADER, Bundle.EMPTY,
