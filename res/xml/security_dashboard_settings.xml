@@ -67,6 +67,7 @@
         <Preference
             android:key="app_lock_settings"
             android:title="@string/applock_title"
+            android:icon="@drawable/ic_app_locker_settings"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_applock_settings" />
     </PreferenceCategory>
