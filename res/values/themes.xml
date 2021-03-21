@@ -95,7 +95,7 @@
         <item name="android:elevation">1dp</item>
         <item name="switchBarMarginStart">@dimen/switchbar_subsettings_margin_start</item>
         <item name="switchBarMarginEnd">@dimen/switchbar_subsettings_margin_end</item>
-        <item name="switchBarBackgroundColor">@color/switchbar_background_color</item>
+        <item name="switchBarBackgroundColor">?android:attr/colorAccent</item>
         <item name="switchBarBackgroundActivatedColor">?android:attr/colorAccent</item>
         <item name="switchBarRestrictionIcon">@*android:drawable/ic_info</item>
     </style>
