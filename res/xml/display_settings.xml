@@ -167,12 +167,6 @@
         android:icon="@drawable/ic_screen_width"
         android:title="@string/developer_smallest_width" />
 
-    <ListPreference
-            android:key="display_cutout_emulation"
-            android:title="@string/display_cutout_emulation"
-            android:icon="@drawable/ic_screen_cut"
-            settings:keywords="@string/display_cutout_emulation_keywords" />
-
     <SwitchPreference
         android:key="show_operator_name"
         android:title="@string/show_operator_name_title"

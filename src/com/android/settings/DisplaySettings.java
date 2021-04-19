@@ -34,7 +34,6 @@ import com.android.settings.display.TimeoutLockscreenPreferenceController;
 import com.android.settings.display.TimeoutPreferenceController;
 import com.android.settings.display.VrDisplayPreferenceController;
 import com.android.settings.development.DefaultLaunchPreferenceController;
-import com.android.settings.development.EmulateDisplayCutoutPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -100,7 +99,6 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new ThemePreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
         controllers.add(new DefaultLaunchPreferenceController(context, "density"));
-        controllers.add(new EmulateDisplayCutoutPreferenceController(context));
 
         return controllers;
     }
